@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="src/Style/Calendar.css">
+    <link rel="stylesheet" href="src/Style/Layout.css">
+    <link rel="stylesheet" href="src/Style/Profile.css">
+    <link rel="stylesheet" href="src/Style/Navigation.css">
+    <link rel="stylesheet" href="src/Style/Header.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<main class="Layout">
+    <aside class="Layout__aside">
+        <section class="Logo">
+            <p class="Logo__title">the logo</p>
+        </section>
+        <section class="Profile">
+            <img class="Profile__pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3xKI5_b3YOKwuNMhegp-i_CROo8Q-6K02tSie4Tcjs8xF_7D" alt="" class="Profile__pic">
+            <p class="Profile__name">M. Naminovskiy</p>
+        </section>
+        <section class="Navigation">
+            <div class="Navigation__element">
+                <img src="../Img/Overview.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Overview</p>
+            </div>
+            <div class="Navigation__element">
+                <img src="../Img/Messages.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Messages</p>
+            </div>
+            <div class="Navigation__element">
+                <img src="../Img/Workout.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Workout</p>
+            </div>
+            <div class="Navigation__element">
+                <img src="../Img/Calendar.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Calendar</p>
+            </div>
+            <div class="Navigation__element">
+                <img src="../Img/Goals.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Goals</p>
+            </div>
+            <div class="Navigation__element">
+                <img src="../Img/Achivements.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Achivements</p>
+            </div>
+            <div class="Navigation__element">
+                <img src="../Img/Measurements.svg" alt="" class="Navigation__element-icon">
+                <p class="Navigation__element-text">Measurements</p>
+            </div>
+            <p class="Navigation__copyright">®Smooozy.com, 2017</p>
+        </section>
+    </aside>
+    <aside class="Layout__main">
+        <section class="Header">
+            <div class="Toggler">
+                <button class="Toggler__week">Week</button>
+                <button class="Toggler__month">Month</button>
+            </div>
+            <p class="Header__title">< June 2017 ></p>
+             <div class="Search">
+                 <input class="Search__input" type="text" placeholder="What are you looking for?">
+             </div>
+        </section>
+        <section class="Calendar">
+            <div class="Calendar__weekside">
+                <p class="Calendar__weekside-day">Mon</p>
+                <p class="Calendar__weekside-day">tue</p>
+                <p class="Calendar__weekside-day">wed</p>
+                <p class="Calendar__weekside-day">thu</p>
+                <p class="Calendar__weekside-day">fri</p>
+                <p class="Calendar__weekside-day">sat</p>
+                <p class="Calendar__weekside-day">sun</p>
+            </div>
+            <div class="Calendar__main">
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">1</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">2</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">3</time>
+                <span class="Calendar__cell-event Calendar__cell-event-orange Calendar__cell-event-orange-disable">
+                        Cycling
+                    </span>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">4</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">5</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">6</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">7</time>
+                <span class="Calendar__cell-event Calendar__cell-event-green">
+                        Triple Treat
+                    </span>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">8</time>
+                <span class="Calendar__cell-event Calendar__cell-event-orange">
+                        2km Run
+                    </span>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">9</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">10</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">11</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">12</time>
+                <span class="Calendar__cell-event Calendar__cell-event-blue">
+                            5km Run
+                        </span>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">13</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">14</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">15</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date Calendar__cell-date-marked">16</time>
+                <span class="Calendar__cell-event Calendar__cell-event-green">
+                        Trieple Treat
+                        </span>
+                <span class="Calendar__cell-event Calendar__cell-event-blue">
+                        Endurance Run
+                    </span>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">17</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">18</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">19</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">20</time>
+                <span class="Calendar__cell-event Calendar__cell-event-orange">
+                        Cycling
+                     </span>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">21</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">22</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">23</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">24</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">25</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">26</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">27</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">28</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">29</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">30</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">31</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">1</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">2</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">3</time>
+            </div>
+            <div class="Calendar__cell">
+                <time class="Calendar__cell-date">4</time>
+            </div>
+            </div>
+        </section>
+        <section class="Event"></section>
+    </aside>
+</main>
+</body>
+</html>

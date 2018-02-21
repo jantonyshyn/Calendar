@@ -1,0 +1,103 @@
+.Calendar {
+  width: 993px;
+  display: flex;
+  margin-left: 59.8px;
+  flex-direction: column;
+  background-color:;
+
+  &__weekside {
+    display: flex;
+    border: solid 1px #efefef;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__weekside-day {
+    width: 139.8px;
+    height: 13px;
+    text-align: center;
+    font-size: 10px;
+    color: #a8b2b9;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  &__cell {
+    width: 139.8px;
+    height: 122px;
+    border: solid 1px #efefef;
+
+  }
+
+  &__cell-date {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #8a888a;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    letter-spacing: -0.2px;
+  }
+
+  &__cell-date-marked {
+    background-color: #ed5454;
+    background-position: center;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    margin-right: 17px;
+    margin-top: 17px;
+    padding-top: 2px;
+    padding-bottom: 0;
+    border-radius: 12px;
+    text-align: center;
+
+  }
+
+  &__cell-event {
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  &__cell-event-green {
+    border-left: solid 4px #58cb7d;
+    color: #58cb7d;
+    background-color: rgba(88, 203, 125, 0.3);
+  }
+
+  &__cell-event-blue {
+    border-left: solid 4px #346ff1;
+    color: #346ff1;
+    background-color: rgba(52, 111, 241, 0.3);
+  }
+
+  &__cell-event-orange {
+    border-left: solid 4px rgba(253, 155, 91, 1);
+    color: rgba(253, 155, 91, 1);
+    background-color: rgba(253, 155, 91, 0.3);
+  }
+
+  &__cell-event-orange-disable {
+    color: #fff;
+    background-color: #fd9b5b;
+    box-shadow: 6px 3px 7px 4px rgba(189, 159, 189, 0.15);
+  }
+}
