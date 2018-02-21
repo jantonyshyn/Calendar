@@ -14,12 +14,17 @@ gulp.task('default', ['less', "mustache"], function() {
 var less = require('gulp-less');
 var path = require('path');
 
+gulp.task('img', function () {
+    return gulp.src('./src/img/**/*.svg')
+        .pipe(gulp.dest('./docs/img'));
+});
+
 gulp.task('less', function () {
     return gulp.src('./src/styles/**/*.less')
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
-        .pipe(gulp.dest('./docs/css'));
+        .pipe(gulp.dest('./docs/styles'));
 });
 
 var mustache = require("gulp-mustache");
